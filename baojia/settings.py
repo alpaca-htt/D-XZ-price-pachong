@@ -127,13 +127,20 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
+USE_L10N = True
+
 USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
+import os
+BASE_BASE_DIR = os.path.dirname(BASE_DIR)
+
+
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_BASE_DIR, "allstatic")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
