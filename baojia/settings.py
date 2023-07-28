@@ -92,7 +92,7 @@ DATABASES = {
         'NAME': 'baojia',
         'USER': 'root',
         'PASSWORD': 'Htt951004',
-        'HOST': '127.0.0.1',
+        'HOST': 'mysql',
         'PORT': '3306',
 
     }
